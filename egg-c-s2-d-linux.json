@@ -1,0 +1,36 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v1"
+    },
+    "exported_at": "2020-07-15T08:18:21-04:00",
+    "name": "CS2D Linux",
+    "author": "support@rodion-network.net",
+    "description": "CS2D Dedicated Server Only Linux",
+    "image": "quay.io\/danelsonic123\/cs2d-linux",
+    "startup": ".\/cs2d_dedicated -port {{SERVER_PORT}} -map {{CS2D_MAP}}",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": \"U.S.G.N.: Serverlist entry updated\",\r\n    \"userInteraction\": []\r\n}",
+        "logs": "{}",
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!\/bin\/ash\r\n# Installation Script\r\n\r\napt -y update\r\napt -y --no-install-recommends install curl lib32gcc1 ca-certificates unzip wget\r\nmkdir -p \/mnt\/server\/\r\ncd \/mnt\/server\/\r\n#Latest CS2D\r\nwget https:\/\/rodion-network.net\/cs2d.zip\r\nunzip cs2d.zip\r\nchmod 777 cs2d_dedicated\r\nrm cs2d.zip\r\n\r\nchown -R root:root \/mnt\r\n\r\nexport HOME=\/mnt\/server",
+            "container": "ubuntu:16.04",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": [
+        {
+            "name": "Map",
+            "description": "The default map for the server.",
+            "env_variable": "CS2D_MAP",
+            "default_value": "",
+            "user_viewable": 1,
+            "user_editable": 1,
+            "rules": "required|string|max:20"
+        }
+    ]
+}
