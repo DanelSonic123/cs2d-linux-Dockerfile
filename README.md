@@ -2,8 +2,8 @@
 
 Pterodactyl Egg
 
-1. Go to yourdomain.com/admin/nests
-2. Download a https://github.com/DanelSonic123/cs2d-linux-Dockerfile/archive/master.zip => egg-c-s2-d-linux.json
+1. Download a https://github.com/DanelSonic123/cs2d-linux-Dockerfile/archive/master.zip => egg-c-s2-d-linux.json
+2. Go to yourdomain.com/admin/nests
 3. Upload a "Import an Egg" | https://i.imgur.com/LffwSfJ.gif
 4. Enjoy!
 
