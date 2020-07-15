@@ -7,6 +7,7 @@ Pterodactyl Egg
 3. Upload a "Import an Egg" | https://i.imgur.com/LffwSfJ.gif
 4. Enjoy!
 
-NOTE: ⚠️ cs2d crash your server  Please add IPTables `iptables -I DOCKER-USER -p udp -m length --length 0:28 -j DROP` the docker/node 
+NOTE: ⚠️ cs2d crash your server  Please add IPTables 
+`iptables -I DOCKER-USER -p udp -m length --length 0:28 -j DROP` the your docker/node 
 
 Having Problems? Contact on Discord: DanelBSMC#3167
