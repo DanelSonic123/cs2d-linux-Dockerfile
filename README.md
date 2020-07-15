@@ -8,6 +8,6 @@ Pterodactyl Egg
 4. Enjoy!
 
 NOTE: ⚠️ cs2d crash your server  Please add IPTables 
-`iptables -I DOCKER-USER -p udp -m length --length 0:28 -j DROP` your dedicated server/VPS
+`iptables -I DOCKER-USER -p udp -m length --length 0:28 -j DROP` your Dedicated Server / VPS (Virtual Private Server)
 
 Having Problems? Contact on Discord: DanelBSMC#3167
