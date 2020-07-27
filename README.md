@@ -10,6 +10,6 @@ Pterodactyl Egg
 NOTE: ⚠️ cs2d crash your server  Please add IPTables run root `iptables -I DOCKER-USER -p udp -m length --length 0:28 -j DROP` your Dedicated Server / VPS (Virtual Private Server) And URL: https://cs2d.com/security.php | Linux
 
 Recommend Pterodactyl Script
-https://github.com/tommytran732/Pterodactyl-Script
+https://github.com/tommytran732/Pterodactyl-Script | Only Linux
 
 Having Problems? Contact on Discord: DanelBSMC#3167
