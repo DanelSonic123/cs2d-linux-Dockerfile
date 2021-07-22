@@ -8,13 +8,13 @@
 4. Enjoy!
 
 NOTE: ⚠️ cs2d crashing your server, Please add IPTables run root 
-```sh
+``
 iptables -I DOCKER-USER -p udp -m length --length 0:28 -j DROP
-``` 
+`` 
 your Dedicated Server / VPS (Virtual Private Server) And URL: see https://cs2d.com/security.php
 
 # Pterodactyl 1.0
 
-Coming soon
+Already supported working now.
 
-Having Problems? Contact us on Discord: Danel#3167
+Having Problems? Contact us on Discord: DanelSonic123#3167
