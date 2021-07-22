@@ -13,9 +13,6 @@ iptables -I DOCKER-USER -p udp -m length --length 0:28 -j DROP
 ``` 
 your Dedicated Server / VPS (Virtual Private Server) And URL: see https://cs2d.com/security.php
 
-Recommend Pterodactyl Script
-https://github.com/tommytran732/Pterodactyl-Script | Only Linux
-
 # Pterodactyl 1.0
 
 Coming soon
